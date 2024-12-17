@@ -42,8 +42,8 @@
                         <td><?= $row->satuan_brg ?></td>
                         <td><?= $row->stock_brg ?></td>
                         <td>
-                            <a href="#">Edit</a>
-                            <a href="#">Delete</a>
+                            <a href="<?= site_url("menu/update_barang/" . $row->kode_brg) ?>">Edit</a>
+                            <a href="<?= site_url("menu/delete_barang/" . $row->kode_brg) ?>">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
