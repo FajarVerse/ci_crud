@@ -14,7 +14,7 @@
         <li class="toggle-dropdown"><a href="#">Master</a>
             <ul class="dropdown">
                 <li><a href="<?= site_url('menu/barang') ?>">Barang</a></li>
-                <li><a href="#">Customer</a></li>
+                <li><a href="<?= site_url('pelanggan') ?>">Customer</a></li>
                 <li><a href="#">Karyawan</a></li>
             </ul>
         </li>

@@ -21,6 +21,7 @@ class Menu extends CI_Controller
         $this->load->view("barang/index", $data);
     }
 
+
     public function tambah_barang()
     {
         // $data["title"] = "Tambah Barang";
