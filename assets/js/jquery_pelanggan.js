@@ -2,6 +2,10 @@ $(document).ready(function () {
 	// pada saat aplikasi dijalankan kursor aktif di text id pelanggan
 	$("#id_pelanggan").focus();
 
+	$("#id_pelanggan").keypress((e) => {
+		console.log("test");
+	});
+
 	// pada saat di text di pelanggan ditekan tombil enter
 	$("#id_pelanggan").keypress(function (e) {
 		if (e.which == 13) {

@@ -11,6 +11,7 @@ class Pelanggan extends CI_Controller
   public function index()
   {
     $data['pelanggan'] = $this->Pelanggan_model->getAll();
+    $this->load->view("templates/menu");
     $this->load->view('pelanggan/pelanggan_view', $data);
   }
 
