@@ -28,14 +28,14 @@
     <fieldset>
       <legend>Pencarian Berdasarkan Harga Jual</legend>
       <label for="min_harga">Harga Jual</label>
-      <input type="number" id="min_harga" name="min_harga" value="<?= isset($_GET['min_harga']) ? $_GET['min_harga'] : "" ?>">
+      <input type="number" id="min_harga" name="minHarga" value="<?= isset($_GET['minHarga']) ? $_GET['minHarga'] : "" ?>">
       <label for="max_harga">s/d</label>
-      <input type="number" id="max_harga" name="max_harga" value="<?= isset($_GET['max_harga']) ? $_GET['max_harga'] : "" ?>">
+      <input type="number" id="max_harga" name="maxHarga" value="<?= isset($_GET['maxHarga']) ? $_GET['maxHarga'] : "" ?>">
     </fieldset>
     <br>
 
     <button type="submit">Search</button>
-    <button type="submit" onclick="handleResetForm">Reset</button>
+    <button type="submit" onclick="handleResetForm()">Reset</button>
   </form>
 
   <br>
