@@ -20,4 +20,15 @@ class Pelanggan_model extends CI_Model
   {
     return $this->db->insert($this->table, $data);
   }
+
+  public function update($id, $data)
+  {
+    $this->db->where('id_pelanggan', $id);
+    return $this->db->update($this->table, $data);
+  }
+
+  public function delete($id)
+  {
+    return $this->db->delete($this->table, ['id_pelanggan' => $id]);
+  }
 }

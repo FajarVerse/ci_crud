@@ -23,10 +23,11 @@ class Barang_model extends CI_Model
     $this->db->where('kode_brg', $kodebrg);
     return $this->db->update($this->table, $data);
   }
- 
+
   public function delete_barang($kodebrg)
   {
     $this->db->where('kode_brg', $kodebrg);
     return $this->db->delete($this->table);
   }
+
 }
