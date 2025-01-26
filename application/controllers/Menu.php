@@ -71,4 +71,10 @@ class Menu extends CI_Controller
         $this->Barang_model->delete_barang($kodebrg);
         redirect("menu/barang");
     }
+
+    public function getByCode()
+    {
+        $kode = $this->input->get('kode');
+        echo json_encode($this->Barang_model->get_barang_by_kodebrg($kode));
+    }
 }

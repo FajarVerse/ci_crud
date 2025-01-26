@@ -15,7 +15,7 @@ class Barang_model extends CI_Model
 
   public function get_barang_by_kodebrg($kodebrg)
   {
-    return $this->db->get_where($this->table, ['kode_brg' => $kodebrg])->row();
+    return $this->db->get_where($this->table, ['kode_brg' => $kodebrg])->row_array();
   }
 
   public function update_barang($kodebrg, $data)
@@ -29,5 +29,4 @@ class Barang_model extends CI_Model
     $this->db->where('kode_brg', $kodebrg);
     return $this->db->delete($this->table);
   }
-
 }
